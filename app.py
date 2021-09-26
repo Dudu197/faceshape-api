@@ -25,7 +25,7 @@ def resize_image(img):
     return new_im
 
 @app.route('/', methods=['POST'])
-def example():
+def index():
    img = Image.open(request.files['file'].stream)
    img = resize_image(img)
    img = ImageOps.grayscale(img)
