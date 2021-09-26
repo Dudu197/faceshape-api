@@ -1,1 +1,1 @@
-"web: flash run" 
+web: gunicorn app:app
